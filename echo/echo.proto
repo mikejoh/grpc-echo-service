@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/mikjoh/simplest-grpc-example/echo";
+
+package echo;
+
+// The greeting service definition.
+service Echoes {
+  // Sends a greeting
+  rpc Echo (EchoRequest) returns (EchoReply) {}
+}
+
+message EchoRequest {
+  string message = 1;
+}
+
+message EchoReply {
+  string message = 1;
+}
