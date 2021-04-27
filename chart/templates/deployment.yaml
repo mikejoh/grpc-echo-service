@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "grpc-echo-service.fullname" . }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- include "grpc-echo-service.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "grpc-echo-service.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "grpc-echo-service.labels" . | nindent 8 }}
+      namespace: {{ .Values.namespace }}
+    spec:
+      containers:
+      - name: {{ include "grpc-echo-service.fullname" . }}
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8443

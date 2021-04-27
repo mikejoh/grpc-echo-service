@@ -1,0 +1,8 @@
+apiVersion: v2
+name: grpc-echo-service
+description: gRPC echo service helm chart
+keywords:
+  - grpc
+  - echo-service
+version: 0.1.0
+appVersion: 0.1.0

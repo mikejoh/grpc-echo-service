@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-echo-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: grpc-echo-service
+  template:
+    metadata:
+      labels:
+        app: grpc-echo-service
+    spec:
+      containers:
+        - name: grpc-echo-service
+          image: docker.io/mikejoh/grpc-echo-service:v0.1.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8443
