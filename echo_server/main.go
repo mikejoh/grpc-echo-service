@@ -6,7 +6,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/mikejoh/simplest-grpc-example/echo"
+	pb "github.com/mikejoh/grpc-echo-service/echo"
 	"google.golang.org/grpc"
 )
 
