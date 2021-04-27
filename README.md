@@ -1,4 +1,4 @@
-# The simplest gRPC example
+# gRPC echo service
 
 _Heavily inspired by the official grpc [`helloworld`](https://grpc.io/docs/languages/go/quickstart/) example._
 
