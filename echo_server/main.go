@@ -14,7 +14,7 @@ const (
 	address = "0.0.0.0:8080"
 )
 
-// server is used to implement echo.GreeterServer.
+// server is used to implement echo.EchoesServer.
 type server struct {
 	pb.UnimplementedEchoesServer
 }
