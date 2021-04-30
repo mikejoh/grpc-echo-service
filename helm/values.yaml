@@ -1,0 +1,7 @@
+---
+name: grpc-echo-service
+namespace: grpc-echo-service
+replicaCount: 3
+image:
+    repository: docker.io/mikejoh/grpc-echo-service
+    tag: v0.1.0

@@ -1,6 +1,6 @@
 # gRPC echo service
 
-_Heavily inspired by the official grpc [`helloworld`](https://grpc.io/docs/languages/go/quickstart/) example._
+_Heavily inspired by the official grpc [`helloworld`](https://grpc.io/docs/languages/go/quickstart/) example but with a fully working Kubernetes deployment example._
 
 ## How to
 1. Download `protoc`
