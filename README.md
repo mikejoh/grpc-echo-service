@@ -6,13 +6,13 @@ _Will only work on your machine._
 
 The echo-service works as follows: The server will answer `pong` on any `ping` request sent using the gRPC client. The `pong` response and `ping` message are hardcoded in the server and client.
 
-## Pre-requisites
-* Docker (!)
-* `kind`
-* gRPC binaries
+## Prerequisites
+* Docker
+* [`kind`](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
+* `protoc` and Go plugins for the protocol compiler
 * Go
 ## How to
-1. Download `protoc`, see this [guide](https://grpc.io/docs/languages/go/quickstart/#prerequisites) for instructions.
+1. See the prerequisites [here](https://grpc.io/docs/languages/go/quickstart/#prerequisites) to install `protoc` and the Go plugins needed.
 2. In the root of this repository run:
 ```
 make gen-proto
