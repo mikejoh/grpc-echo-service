@@ -1,5 +1,7 @@
 # gRPC echo service
 
+[![CI](https://github.com/mikejoh/grpc-echo-service/actions/workflows/go.yml/badge.svg)](https://github.com/mikejoh/grpc-echo-service/actions/workflows/go.yml)
+
 _Heavily inspired by the official grpc [`helloworld`](https://grpc.io/docs/languages/go/quickstart/) example but with a fully working Kubernetes deployment example._
 
 _Will only work on your machine._
